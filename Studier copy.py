@@ -89,7 +89,7 @@ def true_false_quiz(questions):
     score = 0
     for q, a in questions.items():
         random_answer = random.choice(list(questions.values()))
-        print(f"Statement: {q}")
+        print(f"Statement/Question: {q}")
         print(f"(Claimed answer: {random_answer})")
         guess = input("True or False? ").strip().lower()
         if guess in ["stop", "quit", "exit"]:
